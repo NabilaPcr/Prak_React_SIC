@@ -1,0 +1,87 @@
+/* Styling untuk keseluruhan halaman - Vibes Lebaran Maximalist */
+body {
+    font-family: 'Times New Roman', Times, serif; /* Classy tapi Bold */
+    /* Background heboh: Pola garis-garis kuning-putih yang 'berisik' */
+    background: repeating-linear-gradient(
+        45deg,
+        #fdfdfd,
+        #fdfdfd 20px,
+        #faffd1 20px,
+        #faffd1 40px
+    );
+    color: #1a4d2e; /* Hijau Tua pekat */
+    margin: 0;
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+/* Container utama - Vibesnya kayak amplop THR premium / Hard Poster */
+.card {
+    max-width: 550px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 40px;
+    border: 6px solid #1a4d2e; /* Border tebal biar stand out */
+    border-radius: 0px; /* Gen Z suka yang kotak tajam atau sangat bulat, kita pakai tajam */
+    box-shadow: 20px 20px 0px #e6ff00; /* Shadow kuning kaku (Hard Shadow) */
+    position: relative;
+    overflow: visible;
+}
+
+/* Header utama - Center of attention */
+h1 {
+    color: #1a4d2e;
+    text-align: center;
+    font-size: 3.5rem; /* Ukuran jumbo */
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+    line-height: 0.9;
+    /* Efek teks tumpuk */
+    text-shadow: 3px 3px 0px #e6ff00;
+}
+
+/* Paragraf - Bold & Direct */
+p {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    text-align: justify;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Garis pemisah - Gak boleh cuma garis tipis */
+hr {
+    border: none;
+    height: 15px;
+    background: #1a4d2e;
+    margin: 20px 0;
+    /* Bikin polanya bergerigi/putus-putus */
+    mask-image: linear-gradient(to right, black 70%, transparent 70%);
+    mask-size: 20px 100%;
+}
+
+/* Greeting - Small text tapi stand out */
+small {
+    display: block;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
+    background: #e6ff00; /* Kuning stabilo */
+    color: #1a4d2e;
+    padding: 15px;
+    border: 2px solid #1a4d2e;
+    transform: rotate(-3deg); /* Miring heboh ala stiker */
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+/* Elemen tambahan biar makin 'Gen Z' */
+.card::after {
+    content: "🌙✨🕌";
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    font-size: 3rem;
+    filter: drop-shadow(5px 5px 0px #1a4d2e);
+}
