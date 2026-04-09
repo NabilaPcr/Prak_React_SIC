@@ -3,11 +3,13 @@ import './tailwind.css';
 import TailwindCSS from "../pertemuan-3/TailwindCSS";
 import FrameworkList from "./FrameworkList";
 import FrameworkListSearchFilter from "./FrameworkListSearchFilter";
+import ResponsiveDesign from "./ResponsiveDesign";
 
 createRoot(document.getElementById("root"))
     .render (
         <div>
             {/* <FrameworkList/> */}
-            <FrameworkListSearchFilter/>
+            {/* <FrameworkListSearchFilter/> */}
+            <ResponsiveDesign/>
         </div>
     )
