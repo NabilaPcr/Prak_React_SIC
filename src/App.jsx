@@ -8,6 +8,7 @@ import Header from "./layouts/Header";
 import Dashboard from "./Pages/Dashboard";
 import Orders from "./Pages/Orders";
 import Customers from "./Pages/Customers"; 
+import NotFound from "./Pages/NotFound";
 
 function App() {
   // Catatan: state currentPage mungkin tidak lagi diperlukan jika Sidebar menggunakan <Link>
@@ -31,6 +32,7 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/orders" element={<Orders />} />
               <Route path="/customers" element={<Customers />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
         </div>
