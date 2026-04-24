@@ -1,5 +1,5 @@
+/* app.css */
 @import "tailwindcss";
-
 
 @font-face {
   font-family: 'Barlow';
@@ -15,17 +15,37 @@
   --font-barlow: "Barlow", sans-serif;
   --font-poppins: "Poppins", sans-serif;
 
-  --color-latar: #f3f4f6;
-  --color-teks: #374151;
-  --color-teks-samping: #6b7280;
-  --color-garis: #e5e7eb;
-  --color-hijau: #00B074;
-  --color-merah: #ef4444;
-  --color-biru: #3b82f6;
-  --color-kuning: #f59e0b;
+  /* --- SKEMA WARNA BARU (Terinspirasi oleh Grumpy Cat) --- */
+  
+  /* Latar belakang: Warna latar lembut dari gambar */
+  --color-latar: #E8AAB1; 
+  
+  /* Teks utama: Warna teks gelap yang lembut (bukan hitam pekat) */
+  --color-teks: #4A444C; 
+  
+  /* Teks samping/kurang penting: Teks Grumpy Cat */
+  --color-teks-samping: #82737D; 
+  
+  /* Garis pembatas: Warna Grumpy Cat yang lebih gelap/tertekan */
+  --color-garis: #D29EA4; 
+  
+  /* Hijau (Aksen Positif): Warna mata Grumpy Cat (Kuning-Hijau) */
+  --color-hijau: #B8B038; 
+  
+  /* Merah (Aksen Negatif): Warna Rambu "ERROR" */
+  --color-merah: #E85153; 
+  
+  /* Biru (Aksen Info): (Tidak ada di gambar, tapi kita buat senada) */
+  --color-biru: #88A9C6; 
+  
+  /* Kuning (Aksen Peringatan/Revenue): Mata Grumpy Cat (Kuning-Emas) */
+  --color-kuning: #E8BF6C; 
+  
+  /* --- TAMBAHAN: Warna Latar Belakang Komponen --- */
+  /* Putih bersih tidak cocok, kita pakai warna Grumpy Cat yang sangat terang */
+  --color-bg-komponen: #FAF5F5; 
 }
 
 body {
-  @apply font-barlow;
+  @apply font-barlow bg-latar text-teks;
 }
-
