@@ -14,36 +14,31 @@
 @theme {
   --font-barlow: "Barlow", sans-serif;
   --font-poppins: "Poppins", sans-serif;
+  
+  /* Latar belakang halaman: Biru pucat dari langit-langit gambar */
+  --color-latar: #E8F1F8; 
+  
+  /* Latar belakang komponen: Putih bersih */
+  --color-bg-komponen: #FFFFFF; 
+  
+  /* Teks utama: Navy Gelap (diambil dari angka 404) */
+  --color-teks: #2D3E61; 
+  
+  /* Teks samping: Biru abu-abu pudar */
+  --color-teks-samping: #8EA1BF; 
+  
+  /* Garis pembatas: Biru sangat muda */
+  --color-garis: #DDE7F0; 
 
-  /* --- SKEMA WARNA BARU (Terinspirasi oleh Grumpy Cat) --- */
+  /* Warna Aksen Utama: Deep Navy (Tombol Home) */
+  --color-hijau: #2D3E61; /* Re-map 'hijau' agar tidak merusak struktur JSX */
   
-  /* Latar belakang: Warna latar lembut dari gambar */
-  --color-latar: #E8AAB1; 
+  /* Warna Aksen Sekunder: Whale Blue (Aksen Ikon) */
+  --color-biru: #577399; 
   
-  /* Teks utama: Warna teks gelap yang lembut (bukan hitam pekat) */
-  --color-teks: #4A444C; 
-  
-  /* Teks samping/kurang penting: Teks Grumpy Cat */
-  --color-teks-samping: #82737D; 
-  
-  /* Garis pembatas: Warna Grumpy Cat yang lebih gelap/tertekan */
-  --color-garis: #D29EA4; 
-  
-  /* Hijau (Aksen Positif): Warna mata Grumpy Cat (Kuning-Hijau) */
-  --color-hijau: #B8B038; 
-  
-  /* Merah (Aksen Negatif): Warna Rambu "ERROR" */
-  --color-merah: #E85153; 
-  
-  /* Biru (Aksen Info): (Tidak ada di gambar, tapi kita buat senada) */
-  --color-biru: #88A9C6; 
-  
-  /* Kuning (Aksen Peringatan/Revenue): Mata Grumpy Cat (Kuning-Emas) */
-  --color-kuning: #E8BF6C; 
-  
-  /* --- TAMBAHAN: Warna Latar Belakang Komponen --- */
-  /* Putih bersih tidak cocok, kita pakai warna Grumpy Cat yang sangat terang */
-  --color-bg-komponen: #FAF5F5; 
+  /* Warna Aksen Lainnya (Pastel) */
+  --color-merah: #BDC9E1; 
+  --color-kuning: #9EB0CC; 
 }
 
 body {
