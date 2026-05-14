@@ -42,7 +42,6 @@ export default function ErrorPage({ code, title, description, image }) {
           <div className="flex-1 flex justify-center order-1 md:order-2">
             <div className="relative w-full max-w-sm">
               <div className="absolute inset-0 bg-biru/10 rounded-full scale-125 blur-3xl animate-pulse"></div>
-              {/* Cek bagian src ini, harus tanpa kutip */}
               <img 
                 src={image} 
                 alt="Error Illustration" 
