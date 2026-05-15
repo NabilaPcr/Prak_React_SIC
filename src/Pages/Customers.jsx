@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FaPlus, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom"; // Tambahkan import Link
+import { FaPlus, FaTimes, FaEye } from "react-icons/fa";
 import customersData from "../data/customers.json";
 import PageHeader from "../components/PageHeader";
 
@@ -30,7 +31,7 @@ export default function Customers() {
       <div className="p-6 space-y-6">
         {showForm && (
           <div className="bg-white p-6 rounded-3xl border-2 border-dashed border-garis animate-in fade-in zoom-in duration-300">
-            <h3 className="text-lg font-bold mb-4 text-teks">Form Tambah Customer </h3>
+            <h3 className="text-lg font-bold mb-4 text-teks">Form Tambah Customer</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input type="text" placeholder="Customer Name" className="p-3 bg-latar rounded-xl outline-none border border-transparent focus:border-biru" />
               <input type="email" placeholder="Email" className="p-3 bg-latar rounded-xl outline-none border border-transparent focus:border-biru" />
@@ -56,13 +57,21 @@ export default function Customers() {
                 <th className="px-6 py-4 font-bold">Email</th>
                 <th className="px-6 py-4 font-bold">Phone</th>
                 <th className="px-6 py-4 font-bold">Loyalty</th>
-              </tr>
+                <th className="px-6 py-4 font-bold text-center">Action</th>
+               </tr>
             </thead>
             <tbody className="divide-y divide-garis">
               {customersData.map((customer) => (
                 <tr key={customer.customerId} className="hover:bg-latar/30 transition-colors group">
                   <td className="px-6 py-4 font-bold text-teks">{customer.customerId}</td>
-                  <td className="px-6 py-4 text-teks font-medium">{customer.customerName}</td>
+                  <td className="px-6 py-4">
+                    <Link 
+                      to={`/customers/${customer.customerId}`}  // Dynamic route ke detail
+                      className="text-teks font-medium hover:text-biru transition-colors"
+                    >
+                      {customer.customerName}
+                    </Link>
+                  </td>
                   <td className="px-6 py-4 text-teks-samping text-sm">{customer.email}</td>
                   <td className="px-6 py-4 text-teks-samping text-sm">{customer.phone}</td>
                   <td className="px-6 py-4">
@@ -73,6 +82,15 @@ export default function Customers() {
                     }`}>
                       {customer.loyalty}
                     </span>
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <Link 
+                      to={`/customers/${customer.customerId}`}
+                      className="inline-flex items-center space-x-1 text-biru hover:text-teks transition-colors"
+                    >
+                      <FaEye />
+                      <span className="text-xs">Detail</span>
+                    </Link>
                   </td>
                 </tr>
               ))}
