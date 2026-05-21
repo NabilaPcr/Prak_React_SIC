@@ -1,5 +1,6 @@
 import { FaShoppingCart, FaTruck, FaBan, FaDollarSign } from "react-icons/fa";
 import PageHeader from "../components/PageHeader";
+import Card from "../components/Card";
 
 export default function Dashboard() {
   return (
@@ -19,14 +20,14 @@ export default function Dashboard() {
           <div className="bg-teks rounded-xl p-4">
             <FaShoppingCart className="text-3xl text-white" />
           </div>
-          <div className="flex flex-col">
+          <Card div className="flex flex-col">
             <span className="text-2xl font-bold text-teks">75</span>
             <span className="text-teks-samping text-sm">Total Orders</span>
-          </div>
+          </Card>
         </div>
 
         {/* Card Total Delivered - Whale Blue */}
-        <div className="flex items-center space-x-5 bg-bg-komponen rounded-2xl shadow-sm p-4 border border-garis transition-all hover:border-biru">
+        <Card div className="flex items-center space-x-5 bg-bg-komponen rounded-2xl shadow-sm p-4 border border-garis transition-all hover:border-biru">
           <div className="bg-biru rounded-xl p-4">
             <FaTruck className="text-3xl text-white" />
           </div>
@@ -34,10 +35,10 @@ export default function Dashboard() {
             <span className="text-2xl font-bold text-teks">175</span>
             <span className="text-teks-samping text-sm">Total Delivered</span>
           </div>
-        </div>
+        </Card>
 
         {/* Card Total Canceled - Muted Blue */}
-        <div className="flex items-center space-x-5 bg-bg-komponen rounded-2xl shadow-sm p-4 border border-garis transition-all hover:border-biru">
+        <Card div className="flex items-center space-x-5 bg-bg-komponen rounded-2xl shadow-sm p-4 border border-garis transition-all hover:border-biru">
           <div className="bg-merah rounded-xl p-4">
             <FaBan className="text-3xl text-teks" />
           </div>
@@ -45,10 +46,10 @@ export default function Dashboard() {
             <span className="text-2xl font-bold text-teks">40</span>
             <span className="text-teks-samping text-sm">Total Canceled</span>
           </div>
-        </div>
+        </Card>
 
         {/* Card Total Revenue - Light Whale */}
-        <div className="flex items-center space-x-5 bg-bg-komponen rounded-2xl shadow-sm p-4 border border-garis transition-all hover:border-biru">
+        <Card div className="flex items-center space-x-5 bg-bg-komponen rounded-2xl shadow-sm p-4 border border-garis transition-all hover:border-biru">
           <div className="bg-kuning rounded-xl p-4">
             <FaDollarSign className="text-3xl text-teks" />
           </div>
@@ -56,7 +57,7 @@ export default function Dashboard() {
             <span className="text-2xl font-bold text-teks">Rp 128k</span>
             <span className="text-teks-samping text-sm">Total Revenue</span>
           </div>
-        </div>
+        </Card>
       </div>
     </div>
   );

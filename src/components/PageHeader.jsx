@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 // components/PageHeader.jsx
 export default function PageHeader({ title, breadcrumb, children }) {
   return (
@@ -24,7 +26,11 @@ export default function PageHeader({ title, breadcrumb, children }) {
       </div>
 
       <div id="action-button">
-        {children}
+        <Button
+        id ="add-button"
+        >
+          Tambah Data
+        </Button>
       </div>
     </div>
   );

@@ -48,6 +48,12 @@ export default function Sidebar() {
                 <span>Produk</span>
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/components" className={getMenuClass}>
+                <div className="w-5 flex justify-center"><FaUsers className="text-lg" /></div>
+                <span>Component</span>
+              </NavLink>
+            </li>
           </ul>
         </div>
 
