@@ -1,10 +1,9 @@
 // PASTIKAN semua import menggunakan alias @
 import PageHeader from "@/components/PageHeader";
-import { Button } from "@/components/Button"; // atau Button tergantung nama file
-import Card from "@/components/Card";
+import { Button } from "@/components/ui/button"; // ← dari folder ui, huruf kecil
+import Card from "@/components/ui/card"; // ← dari folder ui
 import { CardAction, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from "@/components/ui/card";
-import Badge from "@/components/Badge";
-
+import Badge from "@/components/ui/badge"; // ← dari folder ui
 
 export default function FiturXYZ() {
     return (
