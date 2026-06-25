@@ -1,5 +1,5 @@
 import PageHeader from "../components/PageHeader";
-import { Button } from "../components/ui/Button"; 
+import Button from "../components/ui/Button"; 
 import Card from "../components/Card";
 import Badge from "../components/Badge";
 
