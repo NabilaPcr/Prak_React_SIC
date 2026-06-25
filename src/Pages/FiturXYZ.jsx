@@ -1,6 +1,6 @@
 // SEMUA menggunakan relative path dengan huruf kecil (sesuai file di folder ui)
 import PageHeader from "../components/PageHeader";
-import { Button } from "../components/ui/button"; // ← perhatikan: ui/button (huruf kecil semua)
+import { button } from "../components/ui/button"; // ← perhatikan: ui/button (huruf kecil semua)
 import Card from "../components/Card";
 import Badge from "../components/Badge";
 
@@ -10,9 +10,9 @@ export default function FiturXYZ() {
             <PageHeader title="Fitur XYZ" />
             <p> Ini adalah halaman untuk Fitur XYZ.</p>
 
-            <Button variant="outline">Batal</Button>
-            <Button variant="ghost" size="xs">Batal</Button>
-            <Button variant="destructive">Batal</Button>
+            <button variant="outline">Batal</button>
+            <button variant="ghost" size="xs">Batal</button>
+            <button variant="destructive">Batal</button>
 
             <div className="mt-6">
                 <Card>
