@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"; // Tambahkan import Link
 import { FaPlus, FaTimes, FaEye } from "react-icons/fa";
 import customersData from "../data/customers.json";
 import PageHeader from "../components/PageHeader";
-import { getPointsByTier, getDiscountByTier } from "../utils/crmtemp";
+import { getPointsByTier, getDiscountByTier } from "../utils/crmutils";
 
 export default function Customers() {
   const [showForm, setShowForm] = useState(false);
