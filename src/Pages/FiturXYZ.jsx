@@ -1,6 +1,6 @@
 import { FaShoppingCart, FaTruck, FaBan, FaDollarSign } from "react-icons/fa";
 import PageHeader from "../components/PageHeader";
-import {Button} from "../components/ui/button";
+import {button} from "../components/ui/button";
 import Card from "@/components/Card";
 import { CardAction, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from "@/components/ui/card";
 import Badge from "@/components/Badge";
