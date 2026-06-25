@@ -1,6 +1,5 @@
-// SEMUA menggunakan relative path dengan huruf kecil (sesuai file di folder ui)
 import PageHeader from "../components/PageHeader";
-import { Button } from "../components/ui/Button"; // ← perhatikan: ui/button (huruf kecil semua)
+import { Button } from "../components/ui/Button"; 
 import Card from "../components/Card";
 import Badge from "../components/Badge";
 
