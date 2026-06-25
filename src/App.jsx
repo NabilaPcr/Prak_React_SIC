@@ -8,17 +8,20 @@ import AuthLayout from "./layouts/AuthLayout";
 import Login from "./Pages/auth/Login";
 import Loading from "./components/Loading";
 
+
 const MainLayout = React.lazy(() => import("./layouts/MainLayout"));
 const Dashboard = React.lazy(() => import("./Pages/Dashboard"));
 const Orders = React.lazy(() => import("./Pages/Orders"));
 const Customers = React.lazy(() => import("./Pages/Customers"));
 const Components = React.lazy(() => import("./Pages/Components"));
-const Products = React.lazy(() => import("./Pages/Products")); 
+const Products = React.lazy(() => import("./Pages/Products"));
 const ErrorPage = React.lazy(() => import("./Pages/ErrorPage"));
 const Register = React.lazy(() => import("./Pages/auth/Register"));
 const Forgot = React.lazy(() => import("./Pages/auth/Forgot"));
 const ProductDetail = React.lazy(() => import("./Pages/ProductDetail"));
-const CustomerDetail = React.lazy(() => import("./Pages/CustomerDetail")); 
+const CustomerDetail = React.lazy(() => import("./Pages/CustomerDetail"));
+const FiturXYZ = React.lazy(() => import("./Pages/FiturXYZ"));
+
 
 function App() {
   const [currentPage, setCurrentPage] = useState("dashboard");
@@ -31,9 +34,10 @@ function App() {
           <Route path="/orders" element={<Orders />} />
           <Route path="/customers" element={<Customers />} />
           <Route path="/customers/:id" element={<CustomerDetail />} />
-          <Route path="/products" element={<Products />} /> 
+          <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/components" element={<Components />} />
+          <Route path="/fitur-xyz" element={<FiturXYZ />} />
 
           <Route path="/*" element={<ErrorPage />} />
         </Route>

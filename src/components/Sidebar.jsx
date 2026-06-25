@@ -54,6 +54,12 @@ export default function Sidebar() {
                 <span>Component</span>
               </NavLink>
             </li>
+             <li>
+              <NavLink to="/fitur-xyz" className={getMenuClass}>
+                <div className="w-5 flex justify-center"><FaUsers className="text-lg" /></div>
+                <span>Fitur XYZ</span>
+              </NavLink>
+            </li>
           </ul>
         </div>
 
