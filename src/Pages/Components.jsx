@@ -35,20 +35,14 @@ export default function Components() {
 
   return (
     <>
-      {/* Memperbaiki komentar agar tidak bocor ke tampilan UI */}
-      {/* Tag kosong digunakan untuk membungkus beberapa elemen tanpa menambahkan node ekstra */}
-      
-      {/* Menambahkan background abu-abu lembut, padding yang konsisten, dan jarak antar elemen (space-y-8) */}
       <div className="bg-gray-50 min-h-screen py-8 text-gray-800">
         <Container id="dashboard-container" className="max-w-6xl mx-auto px-4 space-y-8">
           
-          {/* Bagian Header */}
           <div className="border-b pb-4">
             <PageHeader title="Components" />
             <p className="text-gray-500 text-sm mt-1">Ini halaman dokumentasi preview Components</p>
           </div>
 
-          {/* Bagian Buttons & Badges */}
           <div className="bg-white p-6 rounded-xl shadow-sm space-y-6">
             <div>
               <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">Buttons</h3>
@@ -84,7 +78,6 @@ export default function Components() {
             </div>
           </div>
 
-          {/* Bagian Standalone Card */}
           <div className="bg-white p-2 rounded-xl shadow-sm">
             <Card>
               <h2 className="text-xl font-bold text-gray-800">Judul Card</h2>
@@ -92,7 +85,6 @@ export default function Components() {
             </Card>
           </div>
 
-          {/* Bagian Product Cards (Dibuat Grid Kanan-Kiri agar responsif) */}
           <div>
             <h3 className="text-lg font-bold text-gray-800 mb-4">Product Showcase</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -114,7 +106,6 @@ export default function Components() {
             </div>
           </div>
 
-          {/* Bagian Table Data */}
           <div className="bg-white p-6 rounded-xl shadow-sm overflow-hidden">
             <h3 className="text-lg font-bold text-gray-800 mb-4">Data Produk</h3>
             <div className="overflow-x-auto">
