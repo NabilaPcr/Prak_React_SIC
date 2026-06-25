@@ -1,9 +1,9 @@
-import { FaShoppingCart, FaTruck, FaBan, FaDollarSign } from "react-icons/fa";
-import PageHeader from "../components/PageHeader";
-import { Button } from "../components/ui/button"; 
-import Card from "../components/Card";
+// PASTIKAN semua import menggunakan alias @
+import PageHeader from "@/components/PageHeader";
+import { Button } from "@/components/Button"; // atau Button tergantung nama file
+import Card from "@/components/Card";
 import { CardAction, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from "@/components/ui/card";
-import Badge from "../components/Badge";
+import Badge from "@/components/Badge";
 
 
 export default function FiturXYZ() {
