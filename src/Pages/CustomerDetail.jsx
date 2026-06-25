@@ -15,10 +15,10 @@ import {
   getDiscountByTier,
   getNextTier,
   getPointsToNextTier,
-} from "../utils/crmutils";
+} from "../utils/crmtemp";
 
 export default function CustomerDetail() {
-  const { id } = useParams(); // Mengambil nilai id dari URL params
+  const { id } = useParams(); 
   const [customer, setCustomer] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
